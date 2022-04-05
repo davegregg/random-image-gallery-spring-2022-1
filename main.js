@@ -1,7 +1,7 @@
-// List of Followers
-let followersAsString = "jellybeanprince09,estheticthebarbarian,eddiethebulldog,docquery,johntravoltaisbey06"
-// let followersAsArray = followersAsString.split(",")
+/**** LIST FOLLOWERS ****/
 
+// let followersAsString = "jellybeanprince09,estheticthebarbarian,eddiethebulldog,docquery,johntravoltaisbey06"
+// let followersAsArray = followersAsString.split(",")
 let followers = [
     "jellybeanprince09",
     "estheticthebarbarian",
@@ -28,14 +28,15 @@ let displayFollowers = function (followers, title) {
     `)
 }
 
-displayFollowers(followers, "Followers")
-displayFollowers(pets, "List of Awesome Pets")
-
-// Create gallery of random images
-// https://picsum.photos/seed/${randomNumber}/200/300
 
 
+/**** CREATE GALLERY OF RANDOM IMAGES ****/
 
+// https://picsum.photos/seed/${random text here}/200/300
+
+// let randomIntegerInRange = function (min=1, max=100) {
+//     return Math.floor(Math.random() * max) + min
+// }
 
 let generateSeeds = function (total=6) {
     let seeds = []
@@ -45,17 +46,6 @@ let generateSeeds = function (total=6) {
 
     return seeds
 }
-
-
-let seeds = null
-if (localStorage.getItem("seeds") === null) {
-    seeds = generateSeeds()
-    localStorage.setItem("seeds", seeds)
-} else {
-    seeds = localStorage.getItem("seeds").split(",")
-}
-
-
 
 let displayImageGallery = function (seeds, width=200, height=300) {
     let html = ""
@@ -68,12 +58,19 @@ let displayImageGallery = function (seeds, width=200, height=300) {
         `
     }
 
-    document.write(`
-        <main>${html}</main>
-    `)
+    document.write(`<main>${html}</main>`)
+}
+
+
+let seeds = null
+if (localStorage.getItem("seeds") === null) {
+    seeds = generateSeeds()
+    localStorage.setItem("seeds", seeds)
+} else {
+    seeds = localStorage.getItem("seeds").split(",")
 }
 
 displayImageGallery(seeds)
-// let randomIntegerInRange = function (min=1, max=100) {
-//     return Math.floor(Math.random() * max) + min
-// }
+displayFollowers(followers, "Followers")
+displayFollowers(pets, "List of Awesome Pets")
+
