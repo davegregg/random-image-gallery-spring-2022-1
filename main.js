@@ -3,13 +3,13 @@ let followersAsString = "jellybeanprince09,estheticthebarbarian,eddiethebulldog,
 // let followersAsArray = followersAsString.split(",")
 
 let followers = [
-    "jeanprince09",
-    "esmethebarbarian",
-    "eddiebull",
-    "docq",
-    "johntravolta06",
-    "mickyminaj",
-    "getgood1337",
+    "jellybeanprince09",
+    "estheticthebarbarian",
+    "eddiethebulldog",
+    "docquery",
+    "johntravoltaisbey06",
+    "mickyminaj_aka_bob",
+    "getgood1337_or_dont",
 ]
 
 let pets = ["rock", "bat", "wombat", "taz devil"]
