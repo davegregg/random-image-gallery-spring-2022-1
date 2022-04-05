@@ -1,5 +1,5 @@
 // List of Followers
-// let followersAsString = "jeanprince09,esmethebarbarian,eddiebull,docq,johntravolta06"
+let followersAsString = "jellybeanprince09,estheticthebarbarian,eddiethebulldog,docquery,johntravoltaisbey06"
 // let followersAsArray = followersAsString.split(",")
 
 let followers = [
